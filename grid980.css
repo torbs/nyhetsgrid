@@ -1,3 +1,24 @@
 /********************************/
 /*	980 grid		*/
 /********************************/
+
+.col {
+	float:left;
+	margin-right:20px;
+}
+.x1 {width:80px;}
+.x2 {width:180px;}
+.x3 {width:280px;}
+.x4 {width:380px;}
+.x5 {width:480px;}
+.x6 {width:580px;}
+.x7 {width:680px;}
+.x8 {width:780px;}
+.x9	{width:880px;}
+.x10 {width:980px;}
+.x11 {width:1080px;}
+.x12 {
+	margin-right:0;
+	width:1180px;
+}
+.last-col {margin-right:0;}

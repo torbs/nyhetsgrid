@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+/* 
+--------------------------------------------------
+Project: Common CSS, ECE 5.x
+CSS description: 980 Grid system
+Author: Jonas Nilsson, Adresseavisen
+Author: Tor Brekke Skjøtskift, Media Norge 
+--------------------------------------------------
+Table of Contents:
+01:	Basic Grid Definition
+02:	Grid units with 10px padding
+03:	Grid units with 20px padding
+10: Main class library
+--------------------------------------------------
+*/
+
+/* 01 | Basic Grid Definition */
+
+.gridLine {
+	clear:both;
+}
+
+.gridLine .gridUnit {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.gridUnit:first-child {
+	margin: 0px;
+}
+
+.span1 {
+	width: 80px;
+}
+
+.span2 {
+	width: 180px;
+}
+
+.span3 {
+	width: 280px;
+}
+
+.span4 {
+	width: 380px;
+}
+
+.span5 {
+	width: 480px;
+}
+
+.span6 {
+	width: 580px;
+}
+
+.span7 {
+	width: 680px;
+}
+
+.span8 {
+	width: 780px;
+}
+
+.span9 {
+	width: 880px;
+}
+
+.span10 {
+	width: 980px;
+}
+
+/* 02 | Grid units with 10px padding */
+
+.padded10 {
+	padding: 10px;
+}
+
+.padded10 .gridUnit {
+	margin: 0 0 0 10px;
+}
+
+.padded10 .gridUnit:first-child {
+	margin: 0;
+}
+
+.padded10.span1 {
+	width: 60px;
+}
+
+.padded10.span2 {
+	width: 160px;
+}
+
+.padded10.span3 {
+	width: 260px;
+}
+
+.padded10.span4 {
+	width: 360px;
+}
+
+.padded10.span5 {
+	width: 460px;
+}
+
+.padded10.span6 {
+	width: 560px;
+}
+
+.padded10.span7 {
+	width: 660px;
+}
+
+.padded10.span8 {
+	width: 760px;
+}
+
+.padded10.span9 {
+	width: 860px;
+}
+
+.padded10.span10 {
+	width: 960px;
+}
+
+/* 03 | Grid units with 20px padding */
+
+.padded20 {
+	padding: 20px;
+}
+
+.padded20 .gridUnit {
+	margin: 0 0 0 20px;
+}
+
+.padded20 .gridUnit:first-child {
+	margin: 0;
+}
+
+.padded20.span1 {
+	width: 40px;
+}
+
+.padded20.span2 {
+	width: 140px;
+}
+
+.padded20.span3 {
+	width: 240px;
+}
+
+.padded20.span4 {
+	width: 340px;
+}
+
+.padded20.span5 {
+	width: 440px;
+}
+
+.padded20.span6 {
+	width: 540px;
+}
+
+.padded20.span7 {
+	width: 640px;
+}
+
+.padded20.span8 {
+	width: 740px;
+}
+
+.padded20.span9 {
+	width: 840px;
+}
+
+.padded20.span10 {
+	width: 940px;
+}
+
+/* 10 | Main structure containers */
+
+/* Setter tallet 10 har bare for å ha noe å gå på, hehe */
+/* Her kan vi ha de definerte hovedområdene liggende. */
+/* Kommer til å bli brukt på alt vi lager uansett, så greit å ha grunndefinisjonen et sted */
+/* Dagens #viewportAds heter #outer i ECE5x. Et bedre navn spør du meg, da det kan inneholde mer enn bare reklame */
+
+#viewport {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#page {
+	margin: 0px auto;
+	padding: 20px 0;
+	width: 980px;
+	z-index: 100;
+	clear: both;
+}
+
+#header {
+}
+
+#content {
+}
+
+#footer {
+}
+
+/* 11 | Main class library */
+
+/* Her kan vi sette inn properties vi bruker ofte som vi kan kalle med et klassenavn */
+/* Clear, floating, popping etc. Se igjennom. */
+/* Slenger på #page forran klassenavn for å vekte litt høyere. Kan fjernes, men kan vises seg å være lurt. */
+
+#page .clearfix {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+#page .floatLeft {
+	float: left;
+}
+
+#page .floatRight {
+	float:right;
+}
+
+#page .noFloat {
+	float:none;
+	position: static;
+	margin: 0px;
+}
+
+#page .negativeLeft {
+	position: relative;
+	margin: 0 0 0 -20px;
+}
+
+#page .negativeTopLeft {
+	position: relative;
+	margin: -20px 0 0 -20px;
+}
+
+#page .negativeTop {
+	position: relative;
+	margin: -20px 0 0 0;
+}
+
+#page .negativeTopRight {
+	position: relative;
+	margin: -20px -20px 0 0;
+}
+
+#page .negativeRight {
+	position: relative;
+	margin: 0 -20px 0 0;
+}
+
+#page .negativeBottomRight {
+	position: relative;
+	margin: -0 -20px -20px 0;
+}
+
+#page .negativeBottom {
+	position: relative;
+	margin: -0 0 -20px 0;
+}
+
+#page .negativeBottomLeft {
+	position: relative;
+	margin: -0 -20px 0 -20px;
+}
+
+#page .negativeAll {
+	position: relative;
+	margin: -20px;
+}
+
+#page .isParent {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Jonas tester masse greier. Move along :) */
+
+
+/* Test med padded20 som deler inni en span6  */
+
+.span6 .x1x1.padded20 .span1 {
+	width: 260px;
+}
+
+.span6 .x1x1x1.padded20 .span1 {
+	width: 166px;
+}
+
+.span6 .x1x1x1x1.padded20 .span1 {
+	width: 120px;
+}
+
+.span6 .x1x1x1x1x1.padded20 .span1 {
+	width: 92px;
+}
+
+/* Test med padded10 som deler inni en span4  */
+
+.span4 .x1x1x1.padded10 .span1 {
+	width: 113px;
+}
+
+/* Test med padded20 som deler inni en span4  */
+
+.span4 .x1x1x1.padded20 .span1,
+.span4.padded20 .x1x1x1 .span1 {
+	width: 100px;
+}
+
+/* Test med padded20 som deler inni en span10  */
+
+.span10 .x1x1x1x1x1x1x1x1.padded20 .span1 {
+	width: 100px;
+}
+
+.span10 .x1x1x1x1x1x1x1.padded20 .span1 {
+	width: 117px;
+}
+
+.span10 .x1x1x1x1x1x1.padded20 .span1 {
+	width: 140px;
+}
+
+.span10 .x1x1x1x1x1.padded20 .span1 {
+	width: 172px;
+}
+
+/* Test med padded20 som deler inni en span4  */
+
+.span4.padded20 .x1x1x1 .span1 {
+	width: 100px;
+}

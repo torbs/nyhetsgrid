@@ -76,6 +76,7 @@ font
 	font-weight 
 	letter-spacing 
 	line-height 
+	text-align	
 	text-decoration  
 	text-indent 
 	text-shadow 
@@ -139,7 +140,6 @@ transition
 	transition-timing-function
 
 vertical-align
-	text-align
 		
 visibility
 

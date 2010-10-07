@@ -11,7 +11,8 @@ Table of Contents:
 01:	Basic Grid Definition
 02:	Grid units with 10px padding
 03:	Grid units with 20px padding
-10: Main class library
+10:	Main structure containers
+11: Main class library
 --------------------------------------------------
 */
 
@@ -186,20 +187,17 @@ Table of Contents:
 /* Dagens #viewportAds heter #outer i ECE5x. Et bedre navn spør du meg, da det kan inneholde mer enn bare reklame */
 
 #viewport {
-	position: absolute;
-	left: 0px;
-	right: 0px;
 	overflow: hidden;
-	width: 100%;
-	min-width: 1000px;
+	position: absolute; left: 0px; right: 0px;
+	width: 100%; min-width: 1000px;
 }
 
 #page {
+	clear: both;
 	margin: 0px auto;
 	padding: 20px 0;
 	width: 980px;
 	z-index: 100;
-	clear: both;
 }
 
 #header {
@@ -234,53 +232,53 @@ Table of Contents:
 
 #page .noFloat {
 	float:none;
-	position: static;
 	margin: 0px;
+	position: static;
 }
 
 #page .negativeLeft {
-	position: relative;
 	margin: 0 0 0 -20px;
+	
 }
 
 #page .negativeTopLeft {
-	position: relative;
 	margin: -20px 0 0 -20px;
+	position: relative;
 }
 
 #page .negativeTop {
-	position: relative;
 	margin: -20px 0 0 0;
+	position: relative;
 }
 
 #page .negativeTopRight {
-	position: relative;
 	margin: -20px -20px 0 0;
+	position: relative;
 }
 
 #page .negativeRight {
-	position: relative;
 	margin: 0 -20px 0 0;
+	position: relative;
 }
 
 #page .negativeBottomRight {
+	margin: 0 -20px -20px 0;
 	position: relative;
-	margin: -0 -20px -20px 0;
 }
 
 #page .negativeBottom {
+	margin: 0 0 -20px 0;
 	position: relative;
-	margin: -0 0 -20px 0;
 }
 
 #page .negativeBottomLeft {
+	margin: 0 -20px 0 -20px;
 	position: relative;
-	margin: -0 -20px 0 -20px;
 }
 
 #page .negativeAll {
-	position: relative;
 	margin: -20px;
+	position: relative;
 }
 
 #page .isParent {

@@ -361,3 +361,25 @@ Table of Contents:
 .span4.padded20 .x1x1x1 .span1 {
 	width: 100px;
 }
+
+
+
+
+/* TEST */
+
+.coderManWithIndenting {
+	background-image: url(GitHub/nyhetsgrid/test.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	clear: both;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: bold;
+	position: relative;
+		top: 20px;
+		left: 400px;
+	width: 200px;
+		min-width: 180px;
+		height: auto;
+}

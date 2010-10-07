@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* 
+--------------------------------------------------
+Project: Common CSS, ECE 5.x
+CSS description: XHTML tag reformatting
+Author: Jonas Nilsson, Adresseavisen
+Author: Tor Brekke Skjøtskift, Media Norge 
+--------------------------------------------------
+Table of Contents:
+01:	Basic XHTML tag reformatting 
+--------------------------------------------------
+*/
+
+/* 01 | Basic XHTML tag reformatting */
+
+body {
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+blockquote,
+li,
+hr,
+form {
+	margin:0;
+}
+
+input,
+textarea,
+select {
+	font-family: Arial, Helvetica, sans-serif;
+	border: none 0;
+	margin: 0;
+	padding: 0;
+}
+
+img,
+iframe,
+object {
+	border: none 0;
+	vertical-align: bottom;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}

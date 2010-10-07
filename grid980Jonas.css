@@ -188,8 +188,11 @@ Table of Contents:
 
 #viewport {
 	overflow: hidden;
-	position: absolute; left: 0px; right: 0px;
-	width: 100%; min-width: 1000px;
+	position: absolute;
+		left: 0px;
+		right: 0px;
+	width: 100%;
+		min-width: 1000px;
 }
 
 #page {

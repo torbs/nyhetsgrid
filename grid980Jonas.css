@@ -11,6 +11,9 @@ Table of Contents:
 01:	Basic Grid Definition
 02:	Grid units with 10px padding
 03:	Grid units with 20px padding
+
+06: TEST: Padded subdivisions
+
 10:	Main structure containers
 11: Main class library
 --------------------------------------------------
@@ -179,6 +182,166 @@ Table of Contents:
 	width: 940px;
 }
 
+
+/* 06 | TEST: Padded Subdivisions */
+
+/* Padded 10 og 20 definert lenger opp i fila redefinerer gridUnits. */
+/* Fint når man f.eks skal ha padding og svart bakgrunn på en nyhetssak man mangler bilde */
+
+/* Prøver her å redefinere grid'en når man padder en hel rad */
+/* Tar i første omgang kun mulige subdivisions. 5 mulige innenfor en femmerspan */
+/* Padded20 går ikke opp i 0 på subdivisions innenfor spans 9, 7, 6 og 3 */
+/* Padded10 går ikke opp i 0 på subdivisions innenfor spans 9, 8, 7 og 4 */
+/* Kan løses med å justere gutters eller margins til 19 eller 18. Vil ikke synes visuelt */
+
+/* padded20 innenfor span10 */
+.span10 .padded20 .span1 { width: 76px }
+.span10 .padded20 .span2 { width: 172px }
+.span10 .padded20 .span3 { width: 268px }
+.span10 .padded20 .span4 { width: 364px }
+.span10 .padded20 .span5 { width: 460px }
+.span10 .padded20 .span6 { width: 556px }
+.span10 .padded20 .span7 { width: 652px }
+.span10 .padded20 .span8 { width: 748px }
+.span10 .padded20 .span9 { width: 844px }
+.span10 .padded20 .span10 { width: 940px }
+
+/* padded20 innenfor span9. Mangler 5px */
+.span9 .padded20 .span1 { width: 75px }
+.span9 .padded20 .span2 { width: 170px }
+.span9 .padded20 .span3 { width: 265px }
+.span9 .padded20 .span4 { width: 360px }
+.span9 .padded20 .span5 { width: 455px }
+.span9 .padded20 .span6 { width: 550px }
+.span9 .padded20 .span7 { width: 645px }
+.span9 .padded20 .span8 { width: 740px }
+.span9 .padded20 .span9 { width: 835px }
+
+/* padded20 innenfor span8 */
+.span8 .padded20 .span1 { width: 75px }
+.span8 .padded20 .span2 { width: 170px }
+.span8 .padded20 .span3 { width: 265px }
+.span8 .padded20 .span4 { width: 360px }
+.span8 .padded20 .span5 { width: 455px }
+.span8 .padded20 .span6 { width: 550px }
+.span8 .padded20 .span7 { width: 645px }
+.span8 .padded20 .span8 { width: 740px }
+
+/* padded20 innenfor span7. Mangler 2px */
+.span7 .padded20 .span1 { width: 74px }
+.span7 .padded20 .span2 { width: 168px }
+.span7 .padded20 .span3 { width: 262px }
+.span7 .padded20 .span4 { width: 356px }
+.span7 .padded20 .span5 { width: 450px }
+.span7 .padded20 .span6 { width: 544px }
+.span7 .padded20 .span7 { width: 638px }
+
+/* padded20 innenfor span6. Mangler 2px */
+.span6 .padded20 .span1 { width: 73px }
+.span6 .padded20 .span2 { width: 166px }
+.span6 .padded20 .span3 { width: 259px }
+.span6 .padded20 .span4 { width: 352px }
+.span6 .padded20 .span5 { width: 445px }
+.span6 .padded20 .span6 { width: 538px }
+
+/* padded20 innenfor span5 */
+.span5 .padded20 .span1 { width: 72px }
+.span5 .padded20 .span2 { width: 164px }
+.span5 .padded20 .span3 { width: 256px }
+.span5 .padded20 .span4 { width: 348px }
+.span5 .padded20 .span5 { width: 440px }
+
+/* padded20 innenfor span4 */
+.span4 .padded20 .span1 { width: 70px }
+.span4 .padded20 .span2 { width: 160px }
+.span4 .padded20 .span3 { width: 250px }
+.span4 .padded20 .span4 { width: 340px }
+
+/* padded20 innenfor span3. Mangler 2px */
+.span3 .padded20 .span1 { width: 66px }
+.span3 .padded20 .span2 { width: 152px }
+.span3 .padded20 .span3 { width: 238px }
+
+/* padded20 innenfor span2 */
+.span2 .padded20 .span1 { width: 60px }
+.span2 .padded20 .span2 { width: 140px }
+
+/* padded10 innenfor span10 */
+.span10 .padded10 .span1 { width: 87px }
+.span10 .padded10 .span2 { width: 184px }
+.span10 .padded10 .span3 { width: 281px }
+.span10 .padded10 .span4 { width: 378px }
+.span10 .padded10 .span5 { width: 475px }
+.span10 .padded10 .span6 { width: 572px }
+.span10 .padded10 .span7 { width: 669px }
+.span10 .padded10 .span8 { width: 766px }
+.span10 .padded10 .span9 { width: 863px }
+.span10 .padded10 .span10 { width: 960px }
+
+/* padded10 innenfor span9. Mangler 6px */
+.span9 .padded10 .span1 { width: 86px }
+.span9 .padded10 .span2 { width: 182px }
+.span9 .padded10 .span3 { width: 278px }
+.span9 .padded10 .span4 { width: 374px }
+.span9 .padded10 .span5 { width: 470px }
+.span9 .padded10 .span6 { width: 566px }
+.span9 .padded10 .span7 { width: 662px }
+.span9 .padded10 .span8 { width: 758px }
+.span9 .padded10 .span9 { width: 854px }
+
+/* padded10 innenfor span8. Mangler 2px */
+.span8 .padded10 .span1 { width: 86px }
+.span8 .padded10 .span2 { width: 182px }
+.span8 .padded10 .span3 { width: 278px }
+.span8 .padded10 .span4 { width: 374px }
+.span8 .padded10 .span5 { width: 470px }
+.span8 .padded10 .span6 { width: 566px }
+.span8 .padded10 .span7 { width: 662px }
+.span8 .padded10 .span8 { width: 758px }
+
+/* padded10 innenfor span7. Mangler 5px */
+.span7 .padded10 .span1 { width: 85px }
+.span7 .padded10 .span2 { width: 180px }
+.span7 .padded10 .span3 { width: 275px }
+.span7 .padded10 .span4 { width: 370px }
+.span7 .padded10 .span5 { width: 465px }
+.span7 .padded10 .span6 { width: 560px }
+.span7 .padded10 .span7 { width: 655px }
+
+/* padded10 innenfor span6 */
+.span6 .padded10 .span1 { width: 85px }
+.span6 .padded10 .span2 { width: 180px }
+.span6 .padded10 .span3 { width: 275px }
+.span6 .padded10 .span4 { width: 370px }
+.span6 .padded10 .span5 { width: 465px }
+.span6 .padded10 .span6 { width: 560px }
+
+/* padded10 innenfor span5 */
+.span5 .padded10 .span1 { width: 84px }
+.span5 .padded10 .span2 { width: 178px }
+.span5 .padded10 .span3 { width: 272px }
+.span5 .padded10 .span4 { width: 366px }
+.span5 .padded10 .span5 { width: 460px }
+
+/* padded10 innenfor span4. Mangler 2px */
+.span4 .padded10 .span1 { width: 82px }
+.span4 .padded10 .span2 { width: 174px }
+.span4 .padded10 .span3 { width: 266px }
+.span4 .padded10 .span4 { width: 358px }
+
+/* padded10 innenfor span3 */
+.span3 .padded10 .span1 { width: 80px }
+.span3 .padded10 .span2 { width: 170px }
+.span3 .padded10 .span3 { width: 260px }
+
+/* padded10 innenfor span2 */
+.span2 .padded10 .span1 { width: 75px }
+.span2 .padded10 .span2 { width: 160px }
+
+
+
+
+
 /* 10 | Main structure containers */
 
 /* Setter tallet 10 har bare for å ha noe å gå på, hehe */
@@ -191,8 +354,10 @@ Table of Contents:
 	position: absolute;
 		left: 0px;
 		right: 0px;
+		top: 0px;
 	width: 100%;
 		min-width: 1000px;
+
 }
 
 #page {

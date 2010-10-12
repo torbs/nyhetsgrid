@@ -74,6 +74,22 @@ Table of Contents:
 	width: 980px;
 }
 
+.split2 {
+	width: 480px;	
+}
+
+.split3 {
+	width: 313px; /* Mangler 1 px */
+}
+
+.split4 {
+	width: 230px;	
+}
+
+.split5 {
+	width: 180px;	
+}
+
 /* 02 | Grid units with 10px padding */
 
 .padded10 {
@@ -126,6 +142,22 @@ Table of Contents:
 
 .padded10.span10 {
 	width: 960px;
+}
+
+.padded10.split2 {
+	width: 460px;	
+}
+
+.padded10.split3 {
+	width: 293px; /* Mangler 1 px */
+}
+
+.padded10.split4 {
+	width: 210px;	
+}
+
+.padded10.split5 {
+	width: 160px;	
 }
 
 /* 03 | Grid units with 20px padding */
@@ -182,6 +214,22 @@ Table of Contents:
 	width: 940px;
 }
 
+.padded20.split2 {
+	width: 440px;	
+}
+
+.padded20.split3 {
+	width: 273px; /* Mangler 1 px */
+}
+
+.padded20.split4 {
+	width: 190px;	
+}
+
+.padded20.split5 {
+	width: 140px;	
+}
+
 
 /* 06 | TEST: Padded Subdivisions */
 
@@ -193,6 +241,7 @@ Table of Contents:
 /* Padded20 går ikke opp i 0 på subdivisions innenfor spans 9, 7, 6 og 3 */
 /* Padded10 går ikke opp i 0 på subdivisions innenfor spans 9, 8, 7 og 4 */
 /* Kan løses med å justere gutters eller margins til 19 eller 18. Vil ikke synes visuelt */
+/* Slenger med split-definisjoner i samme regla. Her blir det en individuell "mangler" pr rad */
 
 /* padded20 innenfor span10 */
 .span10 .padded20 .span1 { width: 76px }
@@ -206,6 +255,11 @@ Table of Contents:
 .span10 .padded20 .span9 { width: 844px }
 .span10 .padded20 .span10 { width: 940px }
 
+.span10 .padded20 .split2 { width: 460px }
+.span10 .padded20 .split3 { width: 300px }
+.span10 .padded20 .split4 { width: 220px }
+.span10 .padded20 .split5 { width: 172px }
+
 /* padded20 innenfor span9. Mangler 5px */
 .span9 .padded20 .span1 { width: 75px }
 .span9 .padded20 .span2 { width: 170px }
@@ -217,6 +271,11 @@ Table of Contents:
 .span9 .padded20 .span8 { width: 740px }
 .span9 .padded20 .span9 { width: 835px }
 
+.span9 .padded20 .split2 { width: 410px }
+.span9 .padded20 .split3 { width: 266px } /* Mangler 2px */ 
+.span9 .padded20 .split4 { width: 195px }
+.span9 .padded20 .split5 { width: 152px }
+
 /* padded20 innenfor span8 */
 .span8 .padded20 .span1 { width: 75px }
 .span8 .padded20 .span2 { width: 170px }
@@ -227,6 +286,11 @@ Table of Contents:
 .span8 .padded20 .span7 { width: 645px }
 .span8 .padded20 .span8 { width: 740px }
 
+.span8 .padded20 .split2 { width: 360px }
+.span8 .padded20 .split3 { width: 233px } /* Mangler 1px */ 
+.span8 .padded20 .split4 { width: 170px }
+.span8 .padded20 .split5 { width: 132px }
+
 /* padded20 innenfor span7. Mangler 2px */
 .span7 .padded20 .span1 { width: 74px }
 .span7 .padded20 .span2 { width: 168px }
@@ -236,6 +300,11 @@ Table of Contents:
 .span7 .padded20 .span6 { width: 544px }
 .span7 .padded20 .span7 { width: 638px }
 
+.span7 .padded20 .split2 { width: 310px }
+.span7 .padded20 .split3 { width: 200px }
+.span7 .padded20 .split4 { width: 145px }
+.span7 .padded20 .split5 { width: 112px }
+
 /* padded20 innenfor span6. Mangler 2px */
 .span6 .padded20 .span1 { width: 73px }
 .span6 .padded20 .span2 { width: 166px }
@@ -244,6 +313,11 @@ Table of Contents:
 .span6 .padded20 .span5 { width: 445px }
 .span6 .padded20 .span6 { width: 538px }
 
+.span6 .padded20 .split2 { width: 260px }
+.span6 .padded20 .split3 { width: 166px } /* Mangler 2px */ 
+.span6 .padded20 .split4 { width: 120px }
+.span6 .padded20 .split5 { width: 92px }
+
 /* padded20 innenfor span5 */
 .span5 .padded20 .span1 { width: 72px }
 .span5 .padded20 .span2 { width: 164px }
@@ -251,20 +325,40 @@ Table of Contents:
 .span5 .padded20 .span4 { width: 348px }
 .span5 .padded20 .span5 { width: 440px }
 
+.span5 .padded20 .split2 { width: 210px }
+.span5 .padded20 .split3 { width: 133px } /* Mangler 1px */ 
+.span5 .padded20 .split4 { width: 95px }
+.span5 .padded20 .split5 { width: 72px }
+
 /* padded20 innenfor span4 */
 .span4 .padded20 .span1 { width: 70px }
 .span4 .padded20 .span2 { width: 160px }
 .span4 .padded20 .span3 { width: 250px }
 .span4 .padded20 .span4 { width: 340px }
 
+.span4 .padded20 .split2 { width: 160px }
+.span4 .padded20 .split3 { width: 100px }
+.span4 .padded20 .split4 { width: 70px }
+.span4 .padded20 .split5 { width: 52px }
+
 /* padded20 innenfor span3. Mangler 2px */
 .span3 .padded20 .span1 { width: 66px }
 .span3 .padded20 .span2 { width: 152px }
 .span3 .padded20 .span3 { width: 238px }
 
+.span3 .padded20 .split2 { width: 110px }
+.span3 .padded20 .split3 { width: 66px } /* Mangler 2px */
+.span3 .padded20 .split4 { width: 45px }
+.span3 .padded20 .split5 { width: 32px }
+
 /* padded20 innenfor span2 */
 .span2 .padded20 .span1 { width: 60px }
 .span2 .padded20 .span2 { width: 140px }
+
+.span2 .padded20 .split2 { width: 60px }
+.span2 .padded20 .split3 { width: 33px } /* Mangler 1px */
+.span2 .padded20 .split4 { width: 20px }
+.span2 .padded20 .split5 { width: 0px } /* Umulig */
 
 /* padded10 innenfor span10 */
 .span10 .padded10 .span1 { width: 87px }
@@ -278,6 +372,11 @@ Table of Contents:
 .span10 .padded10 .span9 { width: 863px }
 .span10 .padded10 .span10 { width: 960px }
 
+.span10 .padded10 .split2 { width: 475px }
+.span10 .padded10 .split3 { width: 313px } /* Mangler 1px */ 
+.span10 .padded10 .split4 { width: 232px } /* Mangler 2px */ 
+.span10 .padded10 .split5 { width: 184px }
+
 /* padded10 innenfor span9. Mangler 6px */
 .span9 .padded10 .span1 { width: 86px }
 .span9 .padded10 .span2 { width: 182px }
@@ -289,6 +388,11 @@ Table of Contents:
 .span9 .padded10 .span8 { width: 758px }
 .span9 .padded10 .span9 { width: 854px }
 
+.span9 .padded10 .split2 { width: 425px }
+.span9 .padded10 .split3 { width: 280px }
+.span9 .padded10 .split4 { width: 207px } /* Mangler 2px */ 
+.span9 .padded10 .split5 { width: 164px }
+
 /* padded10 innenfor span8. Mangler 2px */
 .span8 .padded10 .span1 { width: 86px }
 .span8 .padded10 .span2 { width: 182px }
@@ -299,6 +403,11 @@ Table of Contents:
 .span8 .padded10 .span7 { width: 662px }
 .span8 .padded10 .span8 { width: 758px }
 
+.span8 .padded10 .split2 { width: 375px }
+.span8 .padded10 .split3 { width: 246px } /* Mangler 2px */
+.span8 .padded10 .split4 { width: 182px } /* Mangler 2px */
+.span8 .padded10 .split5 { width: 144px }
+
 /* padded10 innenfor span7. Mangler 5px */
 .span7 .padded10 .span1 { width: 85px }
 .span7 .padded10 .span2 { width: 180px }
@@ -308,6 +417,11 @@ Table of Contents:
 .span7 .padded10 .span6 { width: 560px }
 .span7 .padded10 .span7 { width: 655px }
 
+.span7 .padded10 .split2 { width: 325px }
+.span7 .padded10 .split3 { width: 213px } /* Mangler 1px */
+.span7 .padded10 .split4 { width: 157px } /* Mangler 2px */
+.span7 .padded10 .split5 { width: 124px }
+
 /* padded10 innenfor span6 */
 .span6 .padded10 .span1 { width: 85px }
 .span6 .padded10 .span2 { width: 180px }
@@ -316,6 +430,11 @@ Table of Contents:
 .span6 .padded10 .span5 { width: 465px }
 .span6 .padded10 .span6 { width: 560px }
 
+.span6 .padded10 .split2 { width: 275px }
+.span6 .padded10 .split3 { width: 180px }
+.span6 .padded10 .split4 { width: 132px } /* Mangler 2px */
+.span6 .padded10 .split5 { width: 104px }
+
 /* padded10 innenfor span5 */
 .span5 .padded10 .span1 { width: 84px }
 .span5 .padded10 .span2 { width: 178px }
@@ -323,20 +442,40 @@ Table of Contents:
 .span5 .padded10 .span4 { width: 366px }
 .span5 .padded10 .span5 { width: 460px }
 
+.span5 .padded10 .split2 { width: 225px }
+.span5 .padded10 .split3 { width: 146px } /* Mangler 2px */
+.span5 .padded10 .split4 { width: 107px } /* Mangler 2px */
+.span5 .padded10 .split5 { width: 84px }
+
 /* padded10 innenfor span4. Mangler 2px */
 .span4 .padded10 .span1 { width: 82px }
 .span4 .padded10 .span2 { width: 174px }
 .span4 .padded10 .span3 { width: 266px }
 .span4 .padded10 .span4 { width: 358px }
 
+.span4 .padded10 .split2 { width: 175px }
+.span4 .padded10 .split3 { width: 113px } /* Mangler 1px */
+.span4 .padded10 .split4 { width: 82px } /* Mangler 2px */
+.span4 .padded10 .split5 { width: 64px }
+
 /* padded10 innenfor span3 */
 .span3 .padded10 .span1 { width: 80px }
 .span3 .padded10 .span2 { width: 170px }
 .span3 .padded10 .span3 { width: 260px }
 
+.span3 .padded10 .split2 { width: 125px }
+.span3 .padded10 .split3 { width: 80px }
+.span3 .padded10 .split4 { width: 57px } /* Mangler 2px */
+.span3 .padded10 .split5 { width: 44px }
+
 /* padded10 innenfor span2 */
 .span2 .padded10 .span1 { width: 75px }
 .span2 .padded10 .span2 { width: 160px }
+
+.span2 .padded10 .split2 { width: 75px }
+.span2 .padded10 .split3 { width: 46px } /* Mangler 2px */
+.span2 .padded10 .split4 { width: 32px } /* Mangler 2px */
+.span2 .padded10 .split5 { width: 24px }
 
 
 
@@ -357,7 +496,6 @@ Table of Contents:
 		top: 0px;
 	width: 100%;
 		min-width: 1000px;
-
 }
 
 #page {

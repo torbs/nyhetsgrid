@@ -358,7 +358,7 @@ Table of Contents:
 .span2 .padded20 .split2 { width: 60px }
 .span2 .padded20 .split3 { width: 33px } /* Mangler 1px */
 .span2 .padded20 .split4 { width: 20px }
-.span2 .padded20 .split5 { width: 0px } /* Umulig */
+.span2 .padded20 .split5 { width: 12px } 
 
 /* padded10 innenfor span10 */
 .span10 .padded10 .span1 { width: 87px }

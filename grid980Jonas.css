@@ -8,18 +8,21 @@ Author: Jonas Nilsson, Adresseavisen
 Author: Tor Brekke Skjøtskift, Media Norge 
 --------------------------------------------------
 Table of Contents:
-01:	Basic Grid Definition
-02:	Grid units with 10px padding
-03:	Grid units with 20px padding
-
-06: TEST: Padded subdivisions
-
+01:	Basic grid definition, lines and units
+02:	Splits within default grid units
+03:	10px padding for units, lines and splits
+04:	20px padding for units, lines and splits
+05:	Complete set of subdivisions for 10px padding
+06:	Complete set of subdivisions for 20px padding
+07:	TEST - Mapping of font-sizes to units and splits
+08:	_
+09:	_
 10:	Main structure containers
-11: Main class library
+11:	Main class library
 --------------------------------------------------
 */
 
-/* 01 | Basic Grid Definition */
+/* 01 | Basic grid definition, lines and units */
 
 .gridLine {
 	clear:both;
@@ -74,23 +77,54 @@ Table of Contents:
 	width: 980px;
 }
 
-.split2 {
-	width: 480px;	
-}
+/* 02 | Splits within default grid units */
 
-.split3 {
-	width: 313px; /* Mangler 1 px */
-}
+.span10 .split2 { width: 480px; }
+.span10 .split3 { width: 313px; } /* Mangler 1 px */ 
+.span10 .split4 { width: 230px; }
+.span10 .split5 { width: 180px; }
 
-.split4 {
-	width: 230px;	
-}
+.span9 .split2 { width: 430px; }
+.span9 .split3 { width: 280px; }
+.span9 .split4 { width: 205px; }
+.span9 .split5 { width: 160px; }
 
-.split5 {
-	width: 180px;	
-}
+.span8 .split2 { width: 380px; }
+.span8 .split3 { width: 246px; } /* Mangler 2 px */ 
+.span8 .split4 { width: 180px; }
+.span8 .split5 { width: 140px; }
 
-/* 02 | Grid units with 10px padding */
+.span7 .split2 { width: 330px; }
+.span7 .split3 { width: 213px; } /* Mangler 1 px */ 
+.span7 .split4 { width: 155px; }
+.span7 .split5 { width: 120px; }
+
+.span6 .split2 { width: 280px; }
+.span6 .split3 { width: 180px; }
+.span6 .split4 { width: 130px; }
+.span6 .split5 { width: 100px; }
+
+.span5 .split2 { width: 230px; }
+.span5 .split3 { width: 146px; } /* Mangler 2 px */ 
+.span5 .split4 { width: 105px; }
+.span5 .split5 { width: 80px; }
+
+.span4 .split2 { width: 180px; }
+.span4 .split3 { width: 113px; } /* Mangler 1 px */ 
+.span4 .split4 { width: 80px; }
+.span4 .split5 { width: 60px; }
+
+.span3 .split2 { width: 130px; }
+.span3 .split3 { width: 80px; } 
+.span3 .split4 { width: 55px; }
+.span3 .split5 { width: 40px; }
+
+.span2 .split2 { width: 80px; }
+.span2 .split3 { width: 46px; } /* Mangler 2 px */ 
+.span2 .split4 { width: 30px; }
+.span2 .split5 { width: 20px; }
+
+/* 03 | 10px padding for units, lines and splits */
 
 .padded10 {
 	padding: 10px;
@@ -160,7 +194,7 @@ Table of Contents:
 	width: 160px;	
 }
 
-/* 03 | Grid units with 20px padding */
+/* 04 | 20px padding for units, lines and splits  */
 
 .padded20 {
 	padding: 20px;
@@ -230,8 +264,7 @@ Table of Contents:
 	width: 140px;	
 }
 
-
-/* 06 | TEST: Padded Subdivisions */
+/* 05 | Complete set of subdivisions for 10px padding */
 
 /* Padded 10 og 20 definert lenger opp i fila redefinerer gridUnits. */
 /* Fint når man f.eks skal ha padding og svart bakgrunn på en nyhetssak man mangler bilde */
@@ -242,123 +275,6 @@ Table of Contents:
 /* Padded10 går ikke opp i 0 på subdivisions innenfor spans 9, 8, 7 og 4 */
 /* Kan løses med å justere gutters eller margins til 19 eller 18. Vil ikke synes visuelt */
 /* Slenger med split-definisjoner i samme regla. Her blir det en individuell "mangler" pr rad */
-
-/* padded20 innenfor span10 */
-.span10 .padded20 .span1 { width: 76px }
-.span10 .padded20 .span2 { width: 172px }
-.span10 .padded20 .span3 { width: 268px }
-.span10 .padded20 .span4 { width: 364px }
-.span10 .padded20 .span5 { width: 460px }
-.span10 .padded20 .span6 { width: 556px }
-.span10 .padded20 .span7 { width: 652px }
-.span10 .padded20 .span8 { width: 748px }
-.span10 .padded20 .span9 { width: 844px }
-.span10 .padded20 .span10 { width: 940px }
-
-.span10 .padded20 .split2 { width: 460px }
-.span10 .padded20 .split3 { width: 300px }
-.span10 .padded20 .split4 { width: 220px }
-.span10 .padded20 .split5 { width: 172px }
-
-/* padded20 innenfor span9. Mangler 5px */
-.span9 .padded20 .span1 { width: 75px }
-.span9 .padded20 .span2 { width: 170px }
-.span9 .padded20 .span3 { width: 265px }
-.span9 .padded20 .span4 { width: 360px }
-.span9 .padded20 .span5 { width: 455px }
-.span9 .padded20 .span6 { width: 550px }
-.span9 .padded20 .span7 { width: 645px }
-.span9 .padded20 .span8 { width: 740px }
-.span9 .padded20 .span9 { width: 835px }
-
-.span9 .padded20 .split2 { width: 410px }
-.span9 .padded20 .split3 { width: 266px } /* Mangler 2px */ 
-.span9 .padded20 .split4 { width: 195px }
-.span9 .padded20 .split5 { width: 152px }
-
-/* padded20 innenfor span8 */
-.span8 .padded20 .span1 { width: 75px }
-.span8 .padded20 .span2 { width: 170px }
-.span8 .padded20 .span3 { width: 265px }
-.span8 .padded20 .span4 { width: 360px }
-.span8 .padded20 .span5 { width: 455px }
-.span8 .padded20 .span6 { width: 550px }
-.span8 .padded20 .span7 { width: 645px }
-.span8 .padded20 .span8 { width: 740px }
-
-.span8 .padded20 .split2 { width: 360px }
-.span8 .padded20 .split3 { width: 233px } /* Mangler 1px */ 
-.span8 .padded20 .split4 { width: 170px }
-.span8 .padded20 .split5 { width: 132px }
-
-/* padded20 innenfor span7. Mangler 2px */
-.span7 .padded20 .span1 { width: 74px }
-.span7 .padded20 .span2 { width: 168px }
-.span7 .padded20 .span3 { width: 262px }
-.span7 .padded20 .span4 { width: 356px }
-.span7 .padded20 .span5 { width: 450px }
-.span7 .padded20 .span6 { width: 544px }
-.span7 .padded20 .span7 { width: 638px }
-
-.span7 .padded20 .split2 { width: 310px }
-.span7 .padded20 .split3 { width: 200px }
-.span7 .padded20 .split4 { width: 145px }
-.span7 .padded20 .split5 { width: 112px }
-
-/* padded20 innenfor span6. Mangler 2px */
-.span6 .padded20 .span1 { width: 73px }
-.span6 .padded20 .span2 { width: 166px }
-.span6 .padded20 .span3 { width: 259px }
-.span6 .padded20 .span4 { width: 352px }
-.span6 .padded20 .span5 { width: 445px }
-.span6 .padded20 .span6 { width: 538px }
-
-.span6 .padded20 .split2 { width: 260px }
-.span6 .padded20 .split3 { width: 166px } /* Mangler 2px */ 
-.span6 .padded20 .split4 { width: 120px }
-.span6 .padded20 .split5 { width: 92px }
-
-/* padded20 innenfor span5 */
-.span5 .padded20 .span1 { width: 72px }
-.span5 .padded20 .span2 { width: 164px }
-.span5 .padded20 .span3 { width: 256px }
-.span5 .padded20 .span4 { width: 348px }
-.span5 .padded20 .span5 { width: 440px }
-
-.span5 .padded20 .split2 { width: 210px }
-.span5 .padded20 .split3 { width: 133px } /* Mangler 1px */ 
-.span5 .padded20 .split4 { width: 95px }
-.span5 .padded20 .split5 { width: 72px }
-
-/* padded20 innenfor span4 */
-.span4 .padded20 .span1 { width: 70px }
-.span4 .padded20 .span2 { width: 160px }
-.span4 .padded20 .span3 { width: 250px }
-.span4 .padded20 .span4 { width: 340px }
-
-.span4 .padded20 .split2 { width: 160px }
-.span4 .padded20 .split3 { width: 100px }
-.span4 .padded20 .split4 { width: 70px }
-.span4 .padded20 .split5 { width: 52px }
-
-/* padded20 innenfor span3. Mangler 2px */
-.span3 .padded20 .span1 { width: 66px }
-.span3 .padded20 .span2 { width: 152px }
-.span3 .padded20 .span3 { width: 238px }
-
-.span3 .padded20 .split2 { width: 110px }
-.span3 .padded20 .split3 { width: 66px } /* Mangler 2px */
-.span3 .padded20 .split4 { width: 45px }
-.span3 .padded20 .split5 { width: 32px }
-
-/* padded20 innenfor span2 */
-.span2 .padded20 .span1 { width: 60px }
-.span2 .padded20 .span2 { width: 140px }
-
-.span2 .padded20 .split2 { width: 60px }
-.span2 .padded20 .split3 { width: 33px } /* Mangler 1px */
-.span2 .padded20 .split4 { width: 20px }
-.span2 .padded20 .split5 { width: 12px } 
 
 /* padded10 innenfor span10 */
 .span10 .padded10 .span1 { width: 87px }
@@ -477,6 +393,236 @@ Table of Contents:
 .span2 .padded10 .split4 { width: 32px } /* Mangler 2px */
 .span2 .padded10 .split5 { width: 24px }
 
+/* 05 | Complete set of subdivisions for 20px padding */
+
+/* padded20 innenfor span10 */
+.span10 .padded20 .span1 { width: 76px }
+.span10 .padded20 .span2 { width: 172px }
+.span10 .padded20 .span3 { width: 268px }
+.span10 .padded20 .span4 { width: 364px }
+.span10 .padded20 .span5 { width: 460px }
+.span10 .padded20 .span6 { width: 556px }
+.span10 .padded20 .span7 { width: 652px }
+.span10 .padded20 .span8 { width: 748px }
+.span10 .padded20 .span9 { width: 844px }
+.span10 .padded20 .span10 { width: 940px }
+
+.span10 .padded20 .split2 { width: 460px }
+.span10 .padded20 .split3 { width: 300px }
+.span10 .padded20 .split4 { width: 220px }
+.span10 .padded20 .split5 { width: 172px }
+
+/* padded20 innenfor span9. Mangler 5px */
+.span9 .padded20 .span1 { width: 75px }
+.span9 .padded20 .span2 { width: 170px }
+.span9 .padded20 .span3 { width: 265px }
+.span9 .padded20 .span4 { width: 360px }
+.span9 .padded20 .span5 { width: 455px }
+.span9 .padded20 .span6 { width: 550px }
+.span9 .padded20 .span7 { width: 645px }
+.span9 .padded20 .span8 { width: 740px }
+.span9 .padded20 .span9 { width: 835px }
+
+.span9 .padded20 .split2 { width: 410px }
+.span9 .padded20 .split3 { width: 266px } /* Mangler 2px */ 
+.span9 .padded20 .split4 { width: 195px }
+.span9 .padded20 .split5 { width: 152px }
+
+/* padded20 innenfor span8 */
+.span8 .padded20 .span1 { width: 75px }
+.span8 .padded20 .span2 { width: 170px }
+.span8 .padded20 .span3 { width: 265px }
+.span8 .padded20 .span4 { width: 360px }
+.span8 .padded20 .span5 { width: 455px }
+.span8 .padded20 .span6 { width: 550px }
+.span8 .padded20 .span7 { width: 645px }
+.span8 .padded20 .span8 { width: 740px }
+
+.span8 .padded20 .split2 { width: 360px }
+.span8 .padded20 .split3 { width: 233px } /* Mangler 1px */ 
+.span8 .padded20 .split4 { width: 170px }
+.span8 .padded20 .split5 { width: 132px }
+
+/* padded20 innenfor span7. Mangler 2px */
+.span7 .padded20 .span1 { width: 74px }
+.span7 .padded20 .span2 { width: 168px }
+.span7 .padded20 .span3 { width: 262px }
+.span7 .padded20 .span4 { width: 356px }
+.span7 .padded20 .span5 { width: 450px }
+.span7 .padded20 .span6 { width: 544px }
+.span7 .padded20 .span7 { width: 638px }
+
+.span7 .padded20 .split2 { width: 310px }
+.span7 .padded20 .split3 { width: 200px }
+.span7 .padded20 .split4 { width: 145px }
+.span7 .padded20 .split5 { width: 112px }
+
+/* padded20 innenfor span6. Mangler 2px */
+.span6 .padded20 .span1 { width: 73px }
+.span6 .padded20 .span2 { width: 166px }
+.span6 .padded20 .span3 { width: 259px }
+.span6 .padded20 .span4 { width: 352px }
+.span6 .padded20 .span5 { width: 445px }
+.span6 .padded20 .span6 { width: 538px }
+
+.span6 .padded20 .split2 { width: 260px }
+.span6 .padded20 .split3 { width: 166px } /* Mangler 2px */ 
+.span6 .padded20 .split4 { width: 120px }
+.span6 .padded20 .split5 { width: 92px }
+
+/* padded20 innenfor span5 */
+.span5 .padded20 .span1 { width: 72px }
+.span5 .padded20 .span2 { width: 164px }
+.span5 .padded20 .span3 { width: 256px }
+.span5 .padded20 .span4 { width: 348px }
+.span5 .padded20 .span5 { width: 440px }
+
+.span5 .padded20 .split2 { width: 210px }
+.span5 .padded20 .split3 { width: 133px } /* Mangler 1px */ 
+.span5 .padded20 .split4 { width: 95px }
+.span5 .padded20 .split5 { width: 72px }
+
+/* padded20 innenfor span4 */
+.span4 .padded20 .span1 { width: 70px }
+.span4 .padded20 .span2 { width: 160px }
+.span4 .padded20 .span3 { width: 250px }
+.span4 .padded20 .span4 { width: 340px }
+
+.span4 .padded20 .split2 { width: 160px }
+.span4 .padded20 .split3 { width: 100px }
+.span4 .padded20 .split4 { width: 70px }
+.span4 .padded20 .split5 { width: 52px }
+
+/* padded20 innenfor span3. Mangler 2px */
+.span3 .padded20 .span1 { width: 66px }
+.span3 .padded20 .span2 { width: 152px }
+.span3 .padded20 .span3 { width: 238px }
+
+.span3 .padded20 .split2 { width: 110px }
+.span3 .padded20 .split3 { width: 66px } /* Mangler 2px */
+.span3 .padded20 .split4 { width: 45px }
+.span3 .padded20 .split5 { width: 32px }
+
+/* padded20 innenfor span2 */
+.span2 .padded20 .span1 { width: 60px }
+.span2 .padded20 .span2 { width: 140px }
+
+.span2 .padded20 .split2 { width: 60px }
+.span2 .padded20 .split3 { width: 33px } /* Mangler 1px */
+.span2 .padded20 .split4 { width: 20px }
+.span2 .padded20 .split5 { width: 12px } 
+
+
+
+
+
+
+
+
+
+
+/* 07 | TEST - Mapping of font-sizes to units and splits */
+/* Det er viktig at vi går fra stort til smått, ellers blir det fucka opp. */
+/* Så satt i steg. Alle som er <=80 får size 10 */
+/* Så satt i steg. Alle som er <=180 får size 20 */
+/* Bør nok nyansere slik at en plassering som er 110px går i gruppa med <=80 */
+/* Eventuelt lage halvsteg innenfor i tillegg.  */
+/* Fjern klassen font i body for å se resultat */
+
+body.font div {
+	font-size: 11px !important;
+}
+
+.span10 {
+	font-size: 100px;
+}
+
+
+.span9 {
+	font-size: 90px;
+}
+
+.span8 {
+	font-size: 80px;
+}
+
+.span7 {
+	font-size: 70px;
+}
+
+.span6 {
+	font-size: 60px;
+}
+
+.span5,
+.span10 .split2,
+.span9 .split2 {
+	font-size: 50px;
+}
+
+.span4,
+.span8 .split2,
+.span10 .split3,
+.span7 .split2 {
+	font-size: 40px;
+}
+
+.span3,
+.span10 .span3,
+.span6 .split2,
+.span9 .split3,
+.span9 .split4,
+.span8 .split3,
+.span7 .split3,
+.span5 .split2,
+.span10 .split4 {
+	font-size: 30px;
+}
+
+.span2,
+.span3 .split3,
+.span4 .split2,
+.span6 .split3,
+.span8 .split4,
+.span10 .split5,
+.span9 .split5,
+.span8 .split5,
+.span7 .split4,
+.span7 .split5,
+.span6 .split5,
+.span5 .split3,
+.span5 .split4,
+.span4 .split3,
+.span3 .split2,
+.span6 .split4,
+.span4 .split4,
+.span10 .span2 {
+	font-size: 20px;
+}
+
+.span1,
+.span5 .split5,
+.span2 .split3,
+.span2 .split4,
+.span2 .split5,
+.span3 .split5,
+.span3 .split4,
+.span4 .split5,
+.span2 .split2 {
+	font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -591,84 +737,7 @@ Table of Contents:
 	margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Jonas tester masse greier. Move along :) */
-
-
-/* Test med padded20 som deler inni en span6  */
-
-.span6 .x1x1.padded20 .span1 {
-	width: 260px;
-}
-
-.span6 .x1x1x1.padded20 .span1 {
-	width: 166px;
-}
-
-.span6 .x1x1x1x1.padded20 .span1 {
-	width: 120px;
-}
-
-.span6 .x1x1x1x1x1.padded20 .span1 {
-	width: 92px;
-}
-
-/* Test med padded10 som deler inni en span4  */
-
-.span4 .x1x1x1.padded10 .span1 {
-	width: 113px;
-}
-
-/* Test med padded20 som deler inni en span4  */
-
-.span4 .x1x1x1.padded20 .span1,
-.span4.padded20 .x1x1x1 .span1 {
-	width: 100px;
-}
-
-/* Test med padded20 som deler inni en span10  */
-
-.span10 .x1x1x1x1x1x1x1x1.padded20 .span1 {
-	width: 100px;
-}
-
-.span10 .x1x1x1x1x1x1x1.padded20 .span1 {
-	width: 117px;
-}
-
-.span10 .x1x1x1x1x1x1.padded20 .span1 {
-	width: 140px;
-}
-
-.span10 .x1x1x1x1x1.padded20 .span1 {
-	width: 172px;
-}
-
-/* Test med padded20 som deler inni en span4  */
-
-.span4.padded20 .x1x1x1 .span1 {
-	width: 100px;
-}
-
-
-
-
-/* TEST */
+/* Skrivekonvensjon */
 
 .coderManWithIndenting {
 	background-image: url(GitHub/nyhetsgrid/test.jpg);

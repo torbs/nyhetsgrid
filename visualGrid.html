@@ -16,15 +16,16 @@ body {
 	overflow: auto;
 }
 
-.gridLine .gridLine {
+.gridLine .gridLine.padded10,
+.gridLine .gridLine.padded20 {
 	margin-bottom: 0px;
 }
 
 .gridUnit {
 	background: #CCC;
-	font-size: 11px;
-		font-weight: bold;
+	font-weight: bold;
 		text-transform: uppercase;
+	overflow: hidden;
 }
 
 .padded20.gridLine,
@@ -40,12 +41,16 @@ body {
 	color: #999;
 }
 
+h1 {
+	font-size: 28px;	
+}
+
 </style>
 </head>
 
-<body>
+<body class="font">
 <div id="viewport">
-	<div id="page">
+	<div id="page" class="span10">
 		
 
 
@@ -89,31 +94,261 @@ body {
 			<div class="gridUnit span1">Span1</div>
 			<div class="gridUnit span9">Span9</div>
 		</div>
-		<div class="gridLine">
-			<div class="gridUnit split2">Split2</div>
-			<div class="gridUnit split2">Split2</div>
+
+
+
+		<h1>Splits within 10 default grid units</h1>
+		<div class="gridLine span10">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
 		</div>
-		<div class="gridLine">
-			<div class="gridUnit split3">Split3</div>
-			<div class="gridUnit split3">Split3</div>
-			<div class="gridUnit split3">Split3</div>
-		</div>
-		<div class="gridLine">
-			<div class="gridUnit split4">Split4</div>
-			<div class="gridUnit split4">Split4</div>
-			<div class="gridUnit split4">Split4</div>
-			<div class="gridUnit split4">Split4</div>
-		</div>
-		<div class="gridLine">
-			<div class="gridUnit split5">Split5</div>
-			<div class="gridUnit split5">Split5</div>
-			<div class="gridUnit split5">Split5</div>
-			<div class="gridUnit split5">Split5</div>
-			<div class="gridUnit split5">Split5</div>
+
+
+
+		<h1>Splits within 9 default grid units</h1>
+		<div class="gridLine span9">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
 		</div>
 		
 
 
+		<h1>Splits within 8 default grid units</h1>
+		<div class="gridLine span8">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+
+
+		<h1>Splits within 7 default grid units</h1>
+		<div class="gridLine span7">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+
+
+		<h1>Splits within 6 default grid units</h1>
+		<div class="gridLine span6">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+
+
+		<h1>Splits within 5 default grid units</h1>
+		<div class="gridLine span5">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+
+
+		<h1>Splits within 4 default grid units</h1>
+		<div class="gridLine span4">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+
+
+		<h1>Splits within 3 default grid units</h1>
+		<div class="gridLine span3">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+
+
+		<h1>Splits within 2 default grid units</h1>
+		<div class="gridLine span2">
+			<div class="gridLine">
+				<div class="gridUnit split2">Split2</div>
+				<div class="gridUnit split2">Split2</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+				<div class="gridUnit split3">Split3</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+				<div class="gridUnit split4">Split4</div>
+			</div>
+			<div class="gridLine">
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+				<div class="gridUnit split5">Split5</div>
+			</div>
+		</div>
+		
+		
+		
 		<h1>Default grid with padded units. 20px</h1>
 		<div class="gridLine">
 			<div class="gridUnit padded20 span10">Span10</div>

@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /* 
 --------------------------------------------------
@@ -19,6 +19,7 @@ Table of Contents:
 09:	_
 10:	Main structure containers
 11:	Main class library
+12: Form styles
 --------------------------------------------------
 */
 
@@ -736,6 +737,101 @@ body.font div {
 #page .isParent {
 	margin: 0;
 }
+
+/* 12 | Form styles */
+
+/* ...Forklaringer... */
+
+select, 
+input, 
+textarea { 
+	font-size:99%; 
+}
+
+/* Alignment of input with label */
+input[type="radio"] { 
+	vertical-align: text-bottom; 
+}
+
+input[type="checkbox"] { 
+	vertical-align: bottom; 
+}
+
+.ie7 input[type="checkbox"] {
+	vertical-align: baseline; 
+}
+
+.ie6 input { 
+	vertical-align: text-bottom; 
+}
+
+/* Override FF default styles*/
+input, 
+button, 
+textarea, 
+select, 
+optgroup, 
+option {
+	line-height: 1.2 !important;
+}
+
+/* Remove extra padding og buttons */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+	padding: 3px 5px;
+}
+
+button::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+	padding:0;
+	border:none;
+}
+
+.ie7 button,
+.ie7 input[type="submit"],
+.ie7 input[type="reset"],
+.ie7 input[type="button"],
+.ie7 .button {
+	overflow: visible;
+}
+
+/* Need class button on <input type="button .../> for IE6 (if you care about people using IE6) */
+.ie6 button,
+.ie6 .button {
+	width:0;
+}
+
+/* For IE*/
+button {
+	width: auto; 
+	overflow: visible; 
+}
+
+/* Hand cursor on clickable input elements */
+label, 
+input[type=button], 
+input[type=submit], 
+button { 
+	cursor: pointer; 
+}
+
+/* Alignment of radio/checkboxes. Remember to wrap in fieldset */
+fieldset {
+	line-height:1;
+}
+
+label {
+	padding-top: 1.2em;
+}
+
+
+
+
 
 /* Skrivekonvensjon */
 

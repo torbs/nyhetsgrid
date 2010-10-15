@@ -7,7 +7,13 @@
 <link href="grid980Jonas.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if gt IE 9]>  <body>             <![endif]-->
+<!--[if !IE]><!--> <body class="front">         <!--<![endif]-->
+
 
 	<form>
 		<fieldset>
@@ -16,6 +22,13 @@
 			<input type="radio" id="radio2" name="radio" /><label for="radio2">Radio 2</label>
 			<input type="radio" id="radio3" name="radio" /><label for="radio3">Radio 3</label>
 		</fieldset>
+		<fieldset>
+			<legend>Radiobuttons</legend>
+			<label></label><input type="radio" id="radio1" name="radio" />Radio 1</label>
+			<label><input type="radio" id="radio2" name="radio" />Radio 2</label>
+			<label><input type="radio" id="radio3" name="radio" />Radio 3</label>
+		</fieldset>
+
 		<label for="button1">Label Button 1</label><button id="1">Button 1</button>
 	</form>
 

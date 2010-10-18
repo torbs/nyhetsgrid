@@ -749,15 +749,7 @@ textarea {
 }
 
 /* Alignment of input with label */
-input[type="radio"] { 
-	vertical-align: baseline; 
-}
-
-input[type="checkbox"] { 
-	vertical-align: bottom; 
-}
-
-.ie7 input[type="checkbox"] {
+input[type="radio"],input[type="checkbox"]  { 
 	vertical-align: baseline; 
 }
 
@@ -772,7 +764,7 @@ textarea,
 select, 
 optgroup, 
 option {
-	line-height: 1.2 !important;
+	line-height: 17px !important;
 }
 
 /* Remove extra padding og buttons */
@@ -781,7 +773,50 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 .button {
+	/* FF3.6 */
+		/* Saf4+, Chrome */
+		background-position: 0% 0%;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#40ffffff', endColorstr='#02ffffff')";
+	border: 1px solid #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	overflow: visible;
 	padding: 3px 5px;
+	position: relative;
+	text-decoration: none;
+	width: auto;
+	background-image: linear-gradient(top, rgba(255,255,255,0.25), rgba(255,255,255,0.05));
+/* Future */
+		/* IE6 & IE7 */
+	    /* IE8 */
+	/* For IE */
+		background-color: #000;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+	text-shadow: #999 0 0 2px;
+	-webkit-transition: all 0.3s linear;
+}
+
+button:active ,
+input[type="submit"]:active ,
+input[type="reset"]:active ,
+input[type="button"]:active ,
+.button:active {
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.25)); /* FF3.6 */
+		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.05)),color-stop(1, rgba(255,255,255,0.25))); /* Saf4+, Chrome */
+		background-image: linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.25)); /* FF3.6 */
 }
 
 button::-moz-focus-inner,
@@ -792,24 +827,11 @@ input[type="button"]::-moz-focus-inner {
 	border:none;
 }
 
-.ie7 button,
-.ie7 input[type="submit"],
-.ie7 input[type="reset"],
-.ie7 input[type="button"],
-.ie7 .button {
-	overflow: visible;
-}
 
 /* Need class button on <input type="button .../> for IE6 (if you care about people using IE6) */
 .ie6 button,
 .ie6 .button {
 	width:0;
-}
-
-/* For IE*/
-button {
-	width: auto; 
-	overflow: visible; 
 }
 
 /* Hand cursor on clickable input elements */
@@ -820,13 +842,20 @@ button {
 	cursor: pointer; 
 }
 
-/* Alignment of radio/checkboxes. Remember to wrap in fieldset */
 fieldset {
-	line-height:1;
+	-moz-border-radius:5px;
+		-webkit-border-radius:5px;/* Applying border-css kills rounded corners in IE. This gives best rendering cross-browser, but gives to dark border in GEcko, Webkit, Presto*/
+	line-height:1;/* Alignment of radio/checkboxes. Remember to wrap in fieldset */
+	padding:5px 10px;
+}
+
+legend {
+	color:#999;
+	font-size:10px;
 }
 
 label {
-	padding-top: 1.2em;
+	padding-top: 14px; /*Trengs kanskje ikke */
 }
 
 

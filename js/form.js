@@ -16,5 +16,58 @@
 			$this.append(el);
 			
 		});
+		$('.rightAlignedLabels input').each(function () {
+			var input = $(this);
+			var label = $('label[for='+input.attr('id')+']');
+			
+			if (input.val() == "" && !input.attr('placeholder')) {
+				label.css({
+					opacity:.5,
+					left:(input.position().left + 6) + 'px',
+					textAlign:'left',
+					width:'auto'
+				})
+				.data('active',false);
+			} else {
+				label.data('active',true);
+			}
+			
+			//label.bind('click', activeLabel);
+			input.bind('focus', labelSlideOut);
+			label.bind('click', function (e) {
+				labelSlideOut();
+				return false;
+			});
+						
+			function labelSlideOut() {
+				if (!label.data('active')) { 
+					input.unbind('focus')
+						.bind('blur', labelSlideBack)
+						.focus();
+
+					label.animate({
+						left:(label.position().left - label.width() - 11 )+'px',
+						opacity:1,
+						},250, function () {
+							label.data('active',true);
+						});
+				}
+			}
+
+			function labelSlideBack() {
+				if ((label.data('active')) && (input.val() == "")) { 
+					input.bind('focus', labelSlideOut)
+						.unbind('blur')
+						.blur();
+					label.animate({
+						left:(input.position().left + 6)+'px',
+						opacity:.5
+						},250, function () {
+							label.data('active',false);
+						});
+				}
+			}
+
+		});
 	});
 })(window.jQuery);

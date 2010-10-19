@@ -920,7 +920,8 @@ input.text:focus {
 label, 
 input[type=button], 
 input[type=submit], 
-button { 
+button,
+.button { 
 	cursor: pointer; 
 }
 

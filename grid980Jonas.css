@@ -794,7 +794,7 @@ input[type="reset"],
 input[type="button"],
 .button {
 	background:#000;
-		filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff40', endColorstr='#ffffff02'); /* IE6 & IE7 */
+		filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#40ffffff', endColorstr='#02ffffff'); /* IE6 & IE7 */
 	    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#40ffffff', endColorstr='#02ffffff')"; /* IE8 */
 		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.25), rgba(255,255,255,0.05)); /* FF3.6 */
 		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.25)),color-stop(1, rgba(255,255,255,0.05))); /* Saf4+, Chrome */
@@ -815,7 +815,8 @@ input[type="button"],
 	padding: 3px 5px;
 	position:relative;
 	text-decoration: none;
-	width: auto; 
+	width: auto;
+		height:17px; 
 
 }
 
@@ -884,6 +885,32 @@ input.text {
 	padding:3px 5px;
 }
 
+input[type="text"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="image"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="range"]:focus,
+input[type="reset"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus, 
+input.text:focus {
+	background-color:#FFFFCC;
+	outline:none;
+	-webkit-transition: all 0.3s linear;
+}
+
+
 /* Styling of input type=file */
 .fileInput {
 	position:relative;
@@ -898,11 +925,21 @@ button {
 }
 
 /* Alternative Form design patterns */
+.rightAlignedLabels {
+	position:relative;
+	padding-left:150px;
+}
+
 .rightAlignedLabels label {
-	float:left;
-	margin-right:5px;
 	text-align:right;
+	position:absolute;
+		left:0;
+		top:auto;
 	width:145px;
+}
+
+.rightAlignedLabels input {
+	display:block;
 }
 
 .pillBox {

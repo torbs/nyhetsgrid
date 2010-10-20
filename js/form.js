@@ -20,7 +20,7 @@
 							$this.val("").css('color','#000');
 						}
 					})
-					.bind('change', function () {
+					.bind('change blur', function () {
 						var value = $this.val();
 						if ((value == "") || (value == placeholder)) {
 							$this.val(placeholder).css('color','#999');

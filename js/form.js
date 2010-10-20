@@ -8,10 +8,27 @@
 		var placeholderTest = document.createElement('input');
 		if  (!('placeholder' in placeholderTest)) {
 			$('input[placeholder]').each(function () {
-				$this = $(this);	
-			});
-		
-		}
+				var $this = $(this);	
+				var placeholder = $this.attr('placeholder');
+				
+				if ($this.val() == "") {
+					$this.val(placeholder).css('color','#999');
+				}
+				
+				$this.bind('focus', function () {
+						if ($this.val() == placeholder) {
+							$this.val("").css('color','#000');
+						}
+					})
+					.bind('change', function () {
+						var value = $this.val();
+						if ((value == "") || (value == placeholder)) {
+							$this.val(placeholder).css('color','#999');
+						}
+					});
+					
+			}); /* end each */
+		} /* end if */
 
 		/********************/
 		/*  Select styling  */
@@ -19,7 +36,6 @@
 		
 		$('select').each(function (i) {
 			var $this = $(this);
-			
 			var dropDown = $('<div class="pillBox selectDropDown"></div>');
 			var input = $('<input type="text" value="'+$this.val()+'"/>').appendTo(dropDown);
 			var btn  = $('<span class="button"><span class="selectIcon"></span></span>');

@@ -1,5 +1,51 @@
 ﻿(function($){
 	$(document).ready(function () {
+
+		/*******************************/
+		/*  HTML5 Placeholder support  */
+		/*******************************/
+
+		var placeholderTest = document.createElement('input');
+		if  (!('placeholder' in placeholderTest)) {
+			$('input[placeholder]').each(function () {
+				$this = $(this);	
+			});
+		
+		}
+
+		/********************/
+		/*  Select styling  */
+		/********************/
+		
+		$('select').each(function (i) {
+			var $this = $(this);
+			
+			var dropDown = $('<div class="pillBox selectDropDown"></div>');
+			var input = $('<input type="text" value="'+$this.val()+'"/>').appendTo(dropDown);
+			var btn  = $('<span class="button"><span class="selectIcon"></span></span>');
+			
+			dropDown.css({
+					top:$this.position().top +'px',
+					left:$this.position().left+'px',
+					zIndex:1,
+					width:$this.outerWidth() + 'px'
+				})
+				.append(btn)
+				.insertBefore($this);
+			$this.css({
+					position:'relative',
+					zIndex:2,
+					opacity:0
+				})
+				.bind('change', function () {
+					input.val($this.val());	
+				})
+		});
+
+		/*****************************/
+		/*  Input type=file styling  */
+		/*****************************/
+
 		$('.fileInput').each(function (){
 			var el = $('<div class="pillBox"><input type="text" name="fake" /><span class="button">Bla gjennom</span></div>')
 				.css({position:'absolute',zIndex:1,top:0,left:0});
@@ -16,6 +62,11 @@
 			$this.append(el);
 			
 		});
+		
+		/*******************/
+		/* Sliding labels  */
+		/*******************/
+		
 		$('.rightAlignedLabels input').each(function () {
 			var input = $(this);
 			var label = $('label[for='+input.attr('id')+']');

@@ -873,7 +873,8 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"], 
-input.text {
+input.text,
+select {
 	background:#f9f9f9;
 	border:1px solid #666;
 		-moz-border-radius:5px;
@@ -904,12 +905,34 @@ input[type="text"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus, 
-input.text:focus {
+input.text:focus,
+select:focus {
 	background-color:#FFFFCC;
 	outline:none;
 	-webkit-transition: all 0.3s linear;
 }
 
+.selectDropDown {
+	position:absolute;
+}
+
+.selectDropDown input {
+	margin-right:12px;
+}
+
+.selectDropDown .button {
+	position:absolute;
+		top:0;
+		right:-1px;
+}
+
+.selectDropDown .selectIcon {
+	background:url('img/icons/select_down_ico.png') no-repeat center center;
+	display:block;
+	width:12px;
+		height:17px;
+		
+}
 
 /* Styling of input type=file */
 .fileInput {

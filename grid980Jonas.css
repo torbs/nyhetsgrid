@@ -15,7 +15,7 @@ Table of Contents:
 05:	Complete set of subdivisions for 10px padding
 06:	Complete set of subdivisions for 20px padding
 07:	TEST - Mapping of font-sizes to units and splits
-08:	_
+08:	Pre, Post, Pull og Push
 09:	_
 10:	Main structure containers
 11:	Main class library
@@ -615,8 +615,178 @@ body.font div {
 
 
 
+/* 08 | PRE, POST, PULL og PUSH - Legger til tom luft */
+/* Intervalene følger gridsplater */
 
+/* Pre */
+ 
+.gridLine .pre1, 
+.pre1 {
+	margin-left:100px;
+}
 
+.gridLine .pre2, 
+.pre2 {
+	margin-left:200px;
+}
+
+.gridLine .pre3, 
+.pre3 {
+	margin-left:300px;
+}
+
+.gridLine .pre4, 
+.pre4 {
+	margin-left:400px;
+}
+
+.gridLine .pre5, 
+.pre5 {
+	margin-left:500px;
+}
+
+.gridLine .pre6, 
+.pre6 {
+	margin-left:600px;
+}
+
+.gridLine .pre7, 
+.pre7 {
+	margin-left:700px;
+}
+
+.gridLine .pre8, 
+.pre8 {
+	margin-left:800px;
+}
+
+.gridLine .pre9, 
+.pre9 {
+	margin-left:900px;
+}
+
+/* Post */
+
+.gridLine .post1, 
+.post1 {
+	margin-right:100px;
+}
+
+.gridLine .post2, 
+.post2 {
+	margin-right:200px;
+}
+
+.gridLine .post3, 
+.post3 {
+	margin-right:300px;
+}
+
+.gridLine .post4, 
+.post4 {
+	margin-right:400px;
+}
+
+.gridLine .post5, 
+.post5 {
+	margin-right:500px;
+}
+
+.gridLine .post6, 
+.post6 {
+	margin-right:600px;
+}
+
+.gridLine .post7, 
+.post7 {
+	margin-right:700px;
+}
+
+.gridLine .post8, 
+.post8 {
+	margin-right:800px;
+}
+
+.gridLine .post9, 
+.post9 {
+	margin-right:900px;
+}
+
+/* Push */
+
+.push1 {
+	margin-right: -100px;
+}
+
+.push2 {
+	margin-right: -200px;
+}
+
+.push3 {
+	margin-right: -300px;
+}
+
+.push4 {
+	margin-right: -400px;
+}
+
+.push5 {
+	margin-right: -500px;
+}
+
+.push6 {
+	margin-right: -600px;
+}
+
+.push7 {
+	margin-right: -700px;
+}
+
+.push8 {
+	margin-right: -800px;
+}
+
+.push9 {
+	margin-right: -900px;
+}
+
+/* Pull */
+
+.pull1 {
+	margin-left: -100px;
+}
+
+.pull2 {
+	margin-left: -200px;
+}
+
+.pull3 {
+	margin-left: -300px;
+}
+
+.pull4 {
+	margin-left: -400px;
+}
+
+.pull5 {
+	margin-left: -500px;
+}
+
+.pull6 {
+	margin-left: -600px;
+}
+
+.pull7 {
+	margin-left: -700px;
+}
+
+.pull8 {
+	margin-left: -800px;
+}
+
+.pull9 {
+	margin-left: -900px;
+}
 
 
 
@@ -794,11 +964,11 @@ input[type="reset"],
 input[type="button"],
 .button {
 	background:#000;
-		filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#40ffffff', endColorstr='#02ffffff'); /* IE6 & IE7 */
-	    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#40ffffff', endColorstr='#02ffffff')"; /* IE8 */
-		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.25), rgba(255,255,255,0.05)); /* FF3.6 */
-		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.25)),color-stop(1, rgba(255,255,255,0.05))); /* Saf4+, Chrome */
-		background-image: linear-gradient(top, rgba(255,255,255,0.25), rgba(255,255,255,0.05)); /* Future */
+		filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#70ffffff', endColorstr='#00ffffff'); /* IE6 & IE7 */
+	    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#70ffffff', endColorstr='#00ffffff')"; /* IE8 */
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0)); /* FF3.6 */
+		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.5)),color-stop(1, rgba(255,255,255,0))); /* Saf4+, Chrome */
+		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0)); /* Future */
 	border:1px solid #000;
 		-moz-border-radius:5px;
 		-webkit-border-radius:5px;
@@ -834,7 +1004,9 @@ input[type="submit"]:active ,
 input[type="reset"]:active ,
 input[type="button"]:active ,
 .button:active {
-	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.25)); /* FF3.6 */
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#02ffffff', endColorstr='#40ffffff'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#02ffffff', endColorstr='#40ffffff')"; /* IE8 */
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.25)); /* FF3.6 */
 		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0.05)),color-stop(1, rgba(255,255,255,0.25))); /* Saf4+, Chrome */
 		background-image: linear-gradient(top, rgba(255,255,255,0.05), rgba(255,255,255,0.25)); /* FF3.6 */
 }
@@ -874,7 +1046,8 @@ input[type="time"],
 input[type="url"],
 input[type="week"], 
 input.text,
-select {
+select,
+textarea {
 	background:#f9f9f9;
 	border:1px solid #666;
 		-moz-border-radius:5px;
@@ -906,7 +1079,8 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus, 
 input.text:focus,
-select:focus {
+select:focus.
+textarea:focus {
 	background-color:#FFFFCC;
 	outline:none;
 	-webkit-transition: all 0.3s linear;

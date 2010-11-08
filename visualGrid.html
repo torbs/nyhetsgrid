@@ -11,13 +11,13 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.gridLine {
+.gridRow {
 	margin-bottom: 20px;
 	overflow: auto;
 }
 
-.gridLine .gridLine.padded10,
-.gridLine .gridLine.padded20 {
+.gridRow .gridRow.padded10,
+.gridRow .gridRow.padded20 {
 	margin-bottom: 0px;
 }
 
@@ -28,8 +28,8 @@ body {
 	overflow: hidden;
 }
 
-.padded20.gridLine,
-.padded10.gridLine {
+.padded20.gridRow,
+.padded10.gridRow {
 	background: #999;
 }
 
@@ -55,42 +55,42 @@ h1 {
 
 
 		<h1>Default grid</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span10">Span10</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span9">Span9</div>
 			<div class="gridUnit span1">Span1</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span8">Span8</div>
 			<div class="gridUnit span2">Span2</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span7">Span7</div>
 			<div class="gridUnit span3">Span3</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span6">Span6</div>
 			<div class="gridUnit span4">Span4</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span5">Span5</div>
 			<div class="gridUnit span5">Span5</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span4">Span4</div>
 			<div class="gridUnit span6">Span6</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span3">Span3</div>
 			<div class="gridUnit span7">Span7</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span2">Span2</div>
 			<div class="gridUnit span8">Span8</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span1">Span1</div>
 			<div class="gridUnit span9">Span9</div>
 		</div>
@@ -98,23 +98,23 @@ h1 {
 
 
 		<h1>Splits within 10 default grid units</h1>
-		<div class="gridLine span10">
-			<div class="gridLine">
+		<div class="gridRow span10">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -126,23 +126,23 @@ h1 {
 
 
 		<h1>Splits within 9 default grid units</h1>
-		<div class="gridLine span9">
-			<div class="gridLine">
+		<div class="gridRow span9">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -154,23 +154,23 @@ h1 {
 
 
 		<h1>Splits within 8 default grid units</h1>
-		<div class="gridLine span8">
-			<div class="gridLine">
+		<div class="gridRow span8">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -182,23 +182,23 @@ h1 {
 
 
 		<h1>Splits within 7 default grid units</h1>
-		<div class="gridLine span7">
-			<div class="gridLine">
+		<div class="gridRow span7">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -210,23 +210,23 @@ h1 {
 
 
 		<h1>Splits within 6 default grid units</h1>
-		<div class="gridLine span6">
-			<div class="gridLine">
+		<div class="gridRow span6">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -238,23 +238,23 @@ h1 {
 
 
 		<h1>Splits within 5 default grid units</h1>
-		<div class="gridLine span5">
-			<div class="gridLine">
+		<div class="gridRow span5">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -266,23 +266,23 @@ h1 {
 
 
 		<h1>Splits within 4 default grid units</h1>
-		<div class="gridLine span4">
-			<div class="gridLine">
+		<div class="gridRow span4">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -294,23 +294,23 @@ h1 {
 
 
 		<h1>Splits within 3 default grid units</h1>
-		<div class="gridLine span3">
-			<div class="gridLine">
+		<div class="gridRow span3">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -322,23 +322,23 @@ h1 {
 
 
 		<h1>Splits within 2 default grid units</h1>
-		<div class="gridLine span2">
-			<div class="gridLine">
+		<div class="gridRow span2">
+			<div class="gridRow">
 				<div class="gridUnit split2">Split2</div>
 				<div class="gridUnit split2">Split2</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 				<div class="gridUnit split3">Split3</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 				<div class="gridUnit split4">Split4</div>
 			</div>
-			<div class="gridLine">
+			<div class="gridRow">
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
 				<div class="gridUnit split5">Split5</div>
@@ -350,61 +350,61 @@ h1 {
 		
 		
 		<h1>Default grid with padded units. 20px</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span10">Span10</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span9">Span9</div>
 			<div class="gridUnit padded20 span1">Span1</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span8">Span8</div>
 			<div class="gridUnit padded20 span2">Span2</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span7">Span7</div>
 			<div class="gridUnit padded20 span3">Span3</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span6">Span6</div>
 			<div class="gridUnit padded20 span4">Span4</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span5">Span5</div>
 			<div class="gridUnit padded20 span5">Span5</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span4">Span4</div>
 			<div class="gridUnit padded20 span6">Span6</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span3">Span3</div>
 			<div class="gridUnit padded20 span7">Span7</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span2">Span2</div>
 			<div class="gridUnit padded20 span8">Span8</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 span1">Span1</div>
 			<div class="gridUnit padded20 span9">Span9</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 split2">Split2</div>
 			<div class="gridUnit padded20 split2">Split2</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 split3">Split3</div>
 			<div class="gridUnit padded20 split3">Split3</div>
 			<div class="gridUnit padded20 split3">Split3</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 split4">Split4</div>
 			<div class="gridUnit padded20 split4">Split4</div>
 			<div class="gridUnit padded20 split4">Split4</div>
 			<div class="gridUnit padded20 split4">Split4</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded20 split5">Split5</div>
 			<div class="gridUnit padded20 split5">Split5</div>
 			<div class="gridUnit padded20 split5">Split5</div>
@@ -415,61 +415,61 @@ h1 {
 
 
 		<h1>Default grid with padded units. 10px</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span10">Span10</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span9">Span9</div>
 			<div class="gridUnit padded10 span1">Span1</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span8">Span8</div>
 			<div class="gridUnit padded10 span2">Span2</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span7">Span7</div>
 			<div class="gridUnit padded10 span3">Span3</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span6">Span6</div>
 			<div class="gridUnit padded10 span4">Span4</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span5">Span5</div>
 			<div class="gridUnit padded10 span5">Span5</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span4">Span4</div>
 			<div class="gridUnit padded10 span6">Span6</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span3">Span3</div>
 			<div class="gridUnit padded10 span7">Span7</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span2">Span2</div>
 			<div class="gridUnit padded10 span8">Span8</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 span1">Span1</div>
 			<div class="gridUnit padded10 span9">Span9</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 split2">Split2</div>
 			<div class="gridUnit padded10 split2">Split2</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 split3">Split3</div>
 			<div class="gridUnit padded10 split3">Split3</div>
 			<div class="gridUnit padded10 split3">Split3</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 split4">Split4</div>
 			<div class="gridUnit padded10 split4">Split4</div>
 			<div class="gridUnit padded10 split4">Split4</div>
 			<div class="gridUnit padded10 split4">Split4</div>
 		</div>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit padded10 split5">Split5</div>
 			<div class="gridUnit padded10 split5">Split5</div>
 			<div class="gridUnit padded10 split5">Split5</div>
@@ -480,63 +480,63 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 10 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span10">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span10">Span10</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span9">span9</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span8">span8</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span7">span7</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span7">span7</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span8">span8</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span9">span9</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -549,59 +549,59 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 9 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span9">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span9">span9</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span8">span8</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span7">span7</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span7">span7</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span8">span8</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -614,55 +614,55 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 8 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span8">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span8">Span8</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span7">span7</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span7">span7</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -675,51 +675,51 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 7 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span7">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span7">Span7</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -732,47 +732,47 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 6 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span6">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span6">Span6</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -785,43 +785,43 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 5 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span5">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span5">Span5</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -834,39 +834,39 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 4 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span4">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span4">Span4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -879,35 +879,35 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 3 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span3">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span3">Span3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -920,31 +920,31 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded20 grid line over 2 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span2">
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span2">Span2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded20">
+				<div class="gridRow padded20">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -957,63 +957,63 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 10 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span10">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span10">Span10</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span9">span9</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span8">span8</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span7">span7</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span7">span7</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span8">span8</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span9">span9</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1026,59 +1026,59 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 9 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span9">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span9">span9</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span8">span8</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span7">span7</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span7">span7</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span8">span8</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1091,55 +1091,55 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 8 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span8">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span8">Span8</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span7">span7</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span7">span7</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1152,51 +1152,51 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 7 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span7">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span7">Span7</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span6">span6</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span6">span6</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1209,47 +1209,47 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 6 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span6">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span6">Span6</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span5">span5</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span5">span5</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1262,43 +1262,43 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 5 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span5">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span5">Span5</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">span4</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span4">span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1311,39 +1311,39 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 4 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span4">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span4">Span4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">span3</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span3">span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1356,35 +1356,35 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 3 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span3">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span3">Span3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">span2</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span2">span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
@@ -1397,31 +1397,31 @@ h1 {
 
 
 		<h1>Subdivisions inside a .padded10 grid line over 2 columns</h1>
-		<div class="gridLine">
+		<div class="gridRow">
 			<div class="gridUnit span2">
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span2">Span2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit span1">span1</div>
 					<div class="gridUnit span1">span1</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split2">Split2</div>
 					<div class="gridUnit split2">Split2</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 					<div class="gridUnit split3">Split3</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 					<div class="gridUnit split4">Split4</div>
 				</div>
-				<div class="gridLine padded10">
+				<div class="gridRow padded10">
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>
 					<div class="gridUnit split5">Split5</div>

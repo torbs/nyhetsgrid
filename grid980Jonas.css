@@ -581,94 +581,94 @@ body.font div {
 
 /* Pre */
  
-.gridLine .pre1, 
+.gridRow .pre1, 
 .pre1 {
 	margin-left:100px;
 }
 
-.gridLine .pre2, 
+.gridRow .pre2, 
 .pre2 {
 	margin-left:200px;
 }
 
-.gridLine .pre3, 
+.gridRow .pre3, 
 .pre3 {
 	margin-left:300px;
 }
 
-.gridLine .pre4, 
+.gridRow .pre4, 
 .pre4 {
 	margin-left:400px;
 }
 
-.gridLine .pre5, 
+.gridRow .pre5, 
 .pre5 {
 	margin-left:500px;
 }
 
-.gridLine .pre6, 
+.gridRow .pre6, 
 .pre6 {
 	margin-left:600px;
 }
 
-.gridLine .pre7, 
+.gridRow .pre7, 
 .pre7 {
 	margin-left:700px;
 }
 
-.gridLine .pre8, 
+.gridRow .pre8, 
 .pre8 {
 	margin-left:800px;
 }
 
-.gridLine .pre9, 
+.gridRow .pre9, 
 .pre9 {
 	margin-left:900px;
 }
 
 /* Post */
 
-.gridLine .post1, 
+.gridRow .post1, 
 .post1 {
 	margin-right:100px;
 }
 
-.gridLine .post2, 
+.gridRow .post2, 
 .post2 {
 	margin-right:200px;
 }
 
-.gridLine .post3, 
+.gridRow .post3, 
 .post3 {
 	margin-right:300px;
 }
 
-.gridLine .post4, 
+.gridRow .post4, 
 .post4 {
 	margin-right:400px;
 }
 
-.gridLine .post5, 
+.gridRow .post5, 
 .post5 {
 	margin-right:500px;
 }
 
-.gridLine .post6, 
+.gridRow .post6, 
 .post6 {
 	margin-right:600px;
 }
 
-.gridLine .post7, 
+.gridRow .post7, 
 .post7 {
 	margin-right:700px;
 }
 
-.gridLine .post8, 
+.gridRow .post8, 
 .post8 {
 	margin-right:800px;
 }
 
-.gridLine .post9, 
+.gridRow .post9, 
 .post9 {
 	margin-right:900px;
 }

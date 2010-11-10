@@ -41,12 +41,22 @@ form {
 	margin:0;
 }
 
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
 input,
 textarea,
 select {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+input,
+select {
+	vertical-align:middle;
 }
 
 img,
@@ -65,4 +75,11 @@ ul {
 a {
 	outline: none;
 	text-decoration: none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
 }

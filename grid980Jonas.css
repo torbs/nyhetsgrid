@@ -820,43 +820,61 @@ body.font div {
 	position: static;
 }
 
+#page .floatLeft {
+	float: left;
+}
+
+#page .floatRight {
+	float:right;
+}
+
+#page .noFloat {
+	float:none;
+	margin: 0px;
+	position: static;
+}
+
 #page .negativeLeft {
-	margin: 0 0 0 -20px;
-	
+	margin-left: -20px;
+
 }
 
 #page .negativeTopLeft {
-	margin: -20px 0 0 -20px;
+	margin-top: -20px;
+	margin-left: -20px;
 	position: relative;
 }
 
 #page .negativeTop {
-	margin: -20px 0 0 0;
+	margin-top: -20px;
 	position: relative;
 }
 
 #page .negativeTopRight {
-	margin: -20px -20px 0 0;
+	margin-top: -20px;
+	margin-right: -20px;
 	position: relative;
 }
 
 #page .negativeRight {
-	margin: 0 -20px 0 0;
+	margin-right: -20px;
 	position: relative;
 }
 
 #page .negativeBottomRight {
-	margin: 0 -20px -20px 0;
+	margin-bottom: -20px;
+	margin-right: -20px;
 	position: relative;
 }
 
 #page .negativeBottom {
-	margin: 0 0 -20px 0;
+	margin-bottom: -20px;
 	position: relative;
 }
 
 #page .negativeBottomLeft {
-	margin: 0 -20px 0 -20px;
+	margin-bottom: -20px;
+	margin-left: -20px;
 	position: relative;
 }
 
